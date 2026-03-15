@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veagle — AI-Powered Football Analytics & Computer Vision</title>
+  <meta name="description"
+    content="Veagle transforms match video into professional football insights using computer vision, player tracking, and AI analytics. Built for clubs, coaches, and analysts." />
+  <link rel="icon" type="image/png" href="images/Veagle_logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/Veagle_logo.png" alt="Veagle" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://dashboard.veagle.sa/login" class="btn btn-outline btn-sm" target="_blank">Login</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get Started</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="live-dot"></span>
+          AI-Powered Football Intelligence
+        </div>
+        <h1>See The Game<br /><span class="accent">Like Never Before</span></h1>
+        <p class="hero-sub">
+          Veagle transforms match footage into real-time football intelligence.
+          Computer vision that tracks every player, every pass, every tactical move —
+          giving coaches and analysts a decisive edge.
+        </p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+          <a href="products.html" class="btn btn-outline btn-lg">Explore Products</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ── Stats Bar ── -->
+  <section class="stats-bar-section">
+    <div class="container">
+      <div class="stats-bar stats-bar-inner reveal">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About Intro ── -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="split-content reveal">
+          <span class="section-label">About Veagle</span>
+          <h2>The Eyes of<br /><span class="accent">Football Intelligence</span></h2>
+          <p>
+            Veagle is an AI-powered football analytics platform built on cutting-edge computer
+            vision and deep learning. We process raw match video to automatically detect, track,
+            and analyze every element on the pitch — so you spend less time watching footage
+            and more time making decisions.
+          </p>
+          <p>
+            From professional clubs to youth academies, Veagle provides the analytical depth
+            once reserved for elite teams — now accessible to any organization ready to
+            compete at the next level.
+          </p>
+          <div class="about-cta-row">
+            <a href="about.html" class="btn btn-primary">Our Story</a>
+            <a href="services.html" class="btn btn-outline">View Services</a>
+          </div>
+        </div>
+        <div class="img-frame img-frame-about reveal reveal-delay-2">
+          <img src="images/hero_analytics.png" alt="AI football analytics detection overlay" />
+          <div class="img-badge">
+            <span class="dot"></span>
+            <span>Live Detection Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Key Features ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header section-center reveal">
+        <span class="section-label">Core Capabilities</span>
+        <h2>Everything Your Team<br /><span class="accent">Needs to Win</span></h2>
+
+      </div>
+      <div class="features-grid">
+        <div class="card reveal reveal-delay-1">
+          <h3>Player Detection & Tracking</h3>
+          <p>YOLO-powered object detection combined with ByteTrack and DeepSORT for frame-perfect player tracking across
+            the entire pitch.</p>
+          <ul class="feature-list">
+            <li>Multi-class detection (players, refs, ball)</li>
+            <li>Player re-identification across cuts</li>
+            <li>Sub-pixel tracking accuracy</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <h3>Heatmaps & Movement</h3>
+          <p>Colour-coded movement density maps that reveal positional patterns, high-press zones, and defensive shape
+            across every 90 minutes.</p>
+          <ul class="feature-list">
+            <li>Individual & team heatmaps</li>
+            <li>Zone occupation analysis</li>
+            <li>Time-segmented HM slices</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <h3>Speed & Distance Analytics</h3>
+          <p>Real-time physical performance metrics extracted directly from video — no wearables required. Track
+            sprints, distance covered, and intensity zones.</p>
+          <ul class="feature-list">
+            <li>Top-speed detection per player</li>
+            <li>Distance covered per phase</li>
+            <li>High-intensity run counts</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <h3>Pass Detection & Networks</h3>
+          <p>Automated pass event detection with directional vectors, success rates, and interactive pass-network
+            visualizations per match period.</p>
+          <ul class="feature-list">
+            <li>Pass map generation</li>
+            <li>Completion rate by player</li>
+            <li>Build-up pattern analysis</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <h3>Possession Analysis</h3>
+          <p>Frame-by-frame ball possession attribution with zone-based breakdowns, pressure events, and territorial
+            control metrics.</p>
+          <ul class="feature-list">
+            <li>Team & half-court possession</li>
+            <li>Possession under pressure</li>
+            <li>Transition speed metrics</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <h3>Tactical & Event Reports</h3>
+          <p>Automated detection of key events — shots, fouls, corners, set-pieces — compiled into structured, shareable
+            PDF or dashboard reports.</p>
+          <ul class="feature-list">
+            <li>Shot map & xG estimates</li>
+            <li>Set-piece detection</li>
+            <li>One-click report export</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Product Highlights ── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header section-header-flex reveal">
+        <div>
+          <span class="section-label">Our Products</span>
+          <h2>Powerful Tools.<br /><span class="accent">One Platform.</span></h2>
+        </div>
+        <a href="products.html" class="btn btn-outline">View All Products →</a>
+      </div>
+      <div class="grid-3 products-grid-gap">
+
+        <div class="product-card reveal reveal-delay-1">
+          <a href="products.html">
+            <div class="product-card-img">
+              <img src="images/veagle_mobile.png" alt="Veagle Mobile App" />
+
+            </div>
+
+            <div class="product-card-body">
+              <h3>Veagle Mobile</h3>
+              <p>Take Veagle everywhere — analytics, session summaries, and match insights in the palm of your hand. iOS
+                &amp; Android.</p>
+
+              <div class="store-badges-row">
+                <a href="https://apps.apple.com/sa/app/veagle/id6752622826" target="_blank" rel="noopener"
+                  class="store-badge">
+                  <div class="store-badge-inner store-badge-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    <span class="store-badge-sm-label">App Store</span>
+                  </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.veagle.player&amp;pcampaignid=web_share"
+                  target="_blank" rel="noopener" class="store-badge">
+                  <div class="store-badge-inner store-badge-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M3.18 23.76c.3.17.64.24.99.18l12.6-7.26-2.72-2.72-10.87 9.8zm-1.76-20.4C1.16 3.7 1 4.08 1 4.56v14.88c0 .48.16.86.42 1.2l.07.06 8.34-8.34v-.2L1.49 3.82l-.07.06zm18.07 7.2-2.6-1.5-3.03 3.03 3.03 3.03 2.63-1.52c.75-.43.75-1.12 0-1.54zm-18.45 9.7 10.87-9.8-2.72-2.72-12.6 7.26c-.3.17-.47.42-.47.72s.17.55.47.72l4.45 3.82z" />
+                    </svg>
+                    <span class="store-badge-sm-label">Google Play</span>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card reveal reveal-delay-2">
+          <a href="products.html">
+            <div class="product-card-img">
+              <img src="images/dashboard_ui.png" alt="Veagle Scout" />
+
+            </div>
+            <div class="product-card-body">
+              <h3>Veagle Scout</h3>
+              <p>Interactive web dashboard for visualizing player KPIs, team trends, and match-by-match performance
+                evolution over a season.</p>
+              <a href="products.html" class="btn btn-primary btn-sm">Learn More</a>
+            </div>
+          </a>
+        </div>
+        <div class="product-card reveal reveal-delay-3">
+          <a href="products.html">
+            <div class="product-card-img">
+              <img src="images/tracking_overlay.png" alt="Veagle Academy" />
+
+            </div>
+            <div class="product-card-body">
+              <h3>Veagle Academy</h3>
+              <p>Interactive web dashboard for academies to manage courts and provide analytics to their players and
+                share
+                data with professional scouts and clubs.</p>
+              <a href="products.html" class="btn btn-primary btn-sm">Learn More</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why Veagle ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split">
+        <div class="img-frame img-frame-why reveal">
+          <img src="images/tactical_board.png" alt="Tactical analysis visual" />
+          <div class="img-badge">
+            <span class="dot"></span>
+            <span>Tactical Formation Detected</span>
+          </div>
+        </div>
+        <div class="split-content reveal reveal-delay-2">
+          <span class="section-label">Why Veagle</span>
+          <h2>Your Competitive<br /><span class="accent">Advantage Starts Here</span></h2>
+          <p>We built Veagle because elite football intelligence shouldn't require elite budgets. Our platform brings
+            vision AI to every club, academy, and analyst.</p>
+          <div class="why-grid">
+            <div class="why-item">
+              <div>
+                <h4>No Wearables Needed</h4>
+                <p>All data extracted from video alone — setup in minutes.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div>
+                <h4>Any Camera, Any Footage</h4>
+                <p>Works with broadcast, tactical, or drone cameras.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div>
+                <h4>Custom AI Solutions</h4>
+                <p>Tailored models and pipelines for your specific needs.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div>
+                <h4>Real-Time Insights</h4>
+                <p>Live or post-match analytics delivered instantly.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div>
+                <h4>Secure & Private</h4>
+                <p>On-premise or cloud deployment with full data control.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div>
+                <h4>Pro-Grade Reports</h4>
+                <p>Export polished reports for coaches and scouts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Client Logos ── -->
+  <section class="client-band">
+    <div class="container">
+
+    </div>
+  </section>
+
+  <!-- ── Testimonials ── -->
+
+
+  <!-- ── CTA Banner ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Ready to See Your Game<br /><span class="accent">Through AI Eyes?</span></h2>
+        <p>Request a free demo and see how Veagle transforms your match footage into professional-grade football
+          intelligence — in minutes.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request a Free Demo</a>
+          <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/Veagle_logo_text.png" alt="Veagle Football Analytics" />
+          <p>AI-powered football analytics and computer vision platform. Transforming match video into actionable
+            intelligence for clubs, coaches, and analysts worldwide.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="services.html">Match Analysis</a></li>
+            <li><a href="services.html">Player Tracking</a></li>
+            <li><a href="services.html">Event Detection</a></li>
+            <li><a href="services.html">Custom AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@veagle.ai">hello@veagle.ai</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><a href="contact.html">Request Demo</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Veagle Analytics. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

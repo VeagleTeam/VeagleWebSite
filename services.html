@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — Veagle Football Analytics</title>
+    <meta name="description"
+        content="Veagle provides match video analysis, player tracking, tactical analytics, event detection, and custom AI solutions for football clubs, academies, and analysts." />
+    <link rel="icon" type="image/png" href="images/Veagle_logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/services.css" />
+</head>
+
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/Veagle_logo.png" alt="Veagle" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://dashboard.veagle.sa/login" class="btn btn-outline btn-sm" target="_blank">Login</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+    </div>
+
+    <!-- ── Hero ── -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label hero-badge">What We Do</span>
+            <h1>Intelligent Services for<br /><span class="accent">Modern Football</span></h1>
+            <p>From raw footage to actionable insights — Veagle's service suite covers every layer of football
+                analytics, tailored to your club or organization's needs.</p>
+        </div>
+    </section>
+
+    <!-- ── Services Quick Nav ── -->
+    <div class="services-quick-nav">
+        <div class="container">
+            <div class="service-intro-cards">
+                <a href="#match-analysis" class="sic">
+                    <h4>Match Video Analysis</h4>
+                </a>
+                <a href="#player-tracking" class="sic">
+                    <h4>Player Tracking</h4>
+                </a>
+                <a href="#tactical" class="sic">
+                    <h4>Tactical Analytics</h4>
+                </a>
+                <a href="#event-detection" class="sic">
+                    <h4>Event Detection</h4>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Service 1: Match Video Analysis ── -->
+    <section id="match-analysis" class="service-block">
+        <div class="container">
+            <div class="split">
+                <div class="split-content reveal">
+                    <span class="section-label">Service 01</span>
+                    <h2>Match Video<br /><span class="accent">Analysis</span></h2>
+                    <p>Upload any match footage — broadcast, tactical cam, or drone — and Veagle's AI pipeline
+                        automatically processes every frame to extract comprehensive match data. No annotation, no
+                        manual tagging required.</p>
+                    <p>Our CV models detect the pitch, segmenting it into zones, and simultaneously identify every
+                        player, referee, and the ball with sub-pixel precision across the entire 90 minutes.</p>
+                    <div class="service-features-grid">
+                        <div class="sf-item">
+                            <div>
+                                <h4>Pitch Homography</h4>
+                                <p>Automatic pitch calibration maps broadcast to 2D top-down view.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Multi-Camera Support</h4>
+                                <p>Works with broadcast, tactical, or mobile camera setups.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Fast Processing</h4>
+                                <p>Full match analyzed in under 30 minutes on standard GPU hardware.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Structured Output</h4>
+                                <p>JSON, CSV, and annotated video outputs for downstream use.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+                        <a href="products.html" class="btn btn-outline">See Match Analyzer</a>
+                    </div>
+                </div>
+                <div class="img-frame img-frame-service reveal reveal-delay-2">
+                    <img src="images/hero_analytics.png" alt="Match video analysis with AI overlay" />
+                    <div class="img-badge"><span class="dot"></span><span>Processing Match Footage</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Service 2: Player Tracking ── -->
+    <section id="player-tracking" class="service-block alt-bg">
+        <div class="container">
+            <div class="split split-reverse">
+                <div class="img-frame img-frame-service reveal">
+                    <img src="images/hero_analytics.png" alt="Player tracking with bounding boxes" />
+                    <div class="img-badge"><span class="dot"></span><span>14 Players Tracked</span></div>
+                </div>
+                <div class="split-content reveal reveal-delay-2">
+                    <span class="section-label">Service 02</span>
+                    <h2>Player Tracking &<br /><span class="accent">Re-Identification</span></h2>
+                    <p>Veagle's tracking engine combines YOLO detection with ByteTrack and DeepSORT algorithms to
+                        maintain consistent player identities across every camera cut, zoom, and occlusion event
+                        throughout a match.</p>
+                    <p>Each player receives a unique ID that persists across the game — enabling per-player statistics,
+                        heat maps, and performance reports with full traceability.</p>
+                    <div class="service-features-grid">
+                        <div class="sf-item">
+                            <div>
+                                <h4>Re-Identification</h4>
+                                <p>Persistent player IDs across camera switches and occlusions.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Speed Measurement</h4>
+                                <p>Real-time speed and distance from video, no GPS needed.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Ball Tracking</h4>
+                                <p>Sub-frame ball detection with trajectory and spin estimation.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Team Classification</h4>
+                                <p>Automatic team separation by jersey color via clustering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="products.html" class="btn btn-outline">Tracking Engine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Service 3: Tactical Analytics ── -->
+    <section id="tactical" class="service-block">
+        <div class="container">
+            <div class="split">
+                <div class="split-content reveal">
+                    <span class="section-label">Service 03</span>
+                    <h2>Tactical & Performance<br /><span class="accent">Analytics</span></h2>
+                    <p>Transform raw tracking data into deep tactical insights. Veagle generates heatmaps, passing
+                        networks, formation analysis, and physical performance metrics that coaching staffs need to
+                        prepare and review matches effectively.</p>
+                    <p>All metrics are visualized in our dashboard or exported as polished coaching reports — ready for
+                        pre-match briefings and post-match reviews.</p>
+                    <div class="service-features-grid">
+                        <div class="sf-item">
+                            <div>
+                                <h4>Player Heatmaps</h4>
+                                <p>Individual and team movement density maps per match period.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Pass Networks</h4>
+                                <p>Interactive visualizations of team build-up and passing tendencies.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Formation Analysis</h4>
+                                <p>Dynamic formation detection and shape shifts throughout the game.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Physical Load</h4>
+                                <p>Distance, sprint count, and intensity zone breakdowns per player.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+                        <a href="products.html" class="btn btn-outline">Performance Dashboard</a>
+                    </div>
+                </div>
+                <div class="img-frame img-frame-service reveal reveal-delay-2">
+                    <img src="images/heatmap_visual.png" alt="Football heatmap and tactical visualization" />
+                    <div class="img-badge"><span class="dot"></span><span>Live Heatmap Generated</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Service 4: Event Detection ── -->
+    <section id="event-detection" class="service-block alt-bg">
+        <div class="container">
+            <div class="split split-reverse">
+                <div class="img-frame img-frame-service reveal">
+                    <img src="images/tactical_board.png" alt="Event detection and football analysis" />
+                    <div class="img-badge"><span class="dot"></span><span>87 Events Detected</span></div>
+                </div>
+                <div class="split-content reveal reveal-delay-2">
+                    <span class="section-label">Service 04</span>
+                    <h2>Event Detection &<br /><span class="accent">Reporting</span></h2>
+                    <p>Veagle's event detection engine automatically identifies key match moments — shots on goal,
+                        passes, fouls, corners, set pieces, pressing triggers, and defensive transitions — timestamped
+                        and classifed from video.</p>
+                    <p>Every detected event is exported to structured reports with video clips, making it simple to
+                        review key moments without scrubbing through hours of footage.</p>
+                    <div class="service-features-grid">
+                        <div class="sf-item">
+                            <div>
+                                <h4>Shot Detection</h4>
+                                <p>All shots classified with location, angle, and outcome.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Set Piece Analysis</h4>
+                                <p>Corners, free kicks, and throw-ins automatically tagged.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Transition Detection</h4>
+                                <p>High-press and counter-attack transitions identified by AI.</p>
+                            </div>
+                        </div>
+                        <div class="sf-item">
+                            <div>
+                                <h4>Auto Reports</h4>
+                                <p>PDF and dashboard reports generated from detected events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="products.html" class="btn btn-outline">Event Suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Service 5: Custom AI ── -->
+
+
+    <!-- ── Final CTA ── -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="cta-banner reveal">
+                <h2>Start Your Analytics<br /><span class="accent">Journey Today</span></h2>
+                <p>Book a consultation with our team and discover which Veagle services are the right fit for your club,
+                    academy, or organization.</p>
+                <div class="btn-group">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Book a Consultation</a>
+                    <a href="products.html" class="btn btn-outline btn-lg">Browse Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/Veagle_logo_text.png" alt="Veagle" />
+                    <p>AI-powered football analytics and computer vision platform. Transforming match video into
+                        actionable intelligence for clubs, coaches, and analysts worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">▶</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Platform</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#match-analysis">Match Analysis</a></li>
+                        <li><a href="#player-tracking">Player Tracking</a></li>
+                        <li><a href="#tactical">Tactical Analytics</a></li>
+                        <li><a href="#event-detection">Event Detection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:hello@veagle.ai">hello@veagle.ai</a></li>
+                        <li><a href="contact.html">Request Demo</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Veagle Analytics. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

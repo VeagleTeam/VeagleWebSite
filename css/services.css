@@ -1,0 +1,119 @@
+/* Services page specific */
+.service-block {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--border-dim);
+}
+
+.service-block:last-of-type {
+    border-bottom: none;
+}
+
+.service-block.alt-bg {
+    background: var(--bg-dark);
+}
+
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 2rem;
+}
+
+.sf-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: var(--bg-card2);
+    border: 1px solid var(--border-dim);
+    border-radius: 10px;
+}
+
+.sf-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--lime-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.sf-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.sf-item p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.service-cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Service page intro strip */
+.service-intro-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 48px 0;
+}
+
+.sic {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.sic:hover {
+    border-color: var(--border);
+    background: var(--bg-card2);
+}
+
+.sic-icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.sic h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Inline style replacements */
+.services-quick-nav {
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-dim);
+}
+
+.img-frame-service {
+    height: 460px;
+}
+
+@media (max-width: 1024px) {
+    .service-intro-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-intro-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-features-grid {
+        grid-template-columns: 1fr;
+    }
+}
